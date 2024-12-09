@@ -12,7 +12,7 @@ class SuperSpider(scrapy.Spider):
         super().__init__()
         self.start_urls = [
             f'https://nsk.superjob.ru/vacancy/search/?keywords={kwargs.get('search')}',
-            #f'https://spb.superjob.ru/vacancy/search/?keywords={kwargs.get('search')}'
+            f'https://spb.superjob.ru/vacancy/search/?keywords={kwargs.get('search')}'
         ]
 
     def parse(self, response):
